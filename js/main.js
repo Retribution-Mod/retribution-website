@@ -38,14 +38,26 @@
         return `${(bytes / Math.pow(1024, i)).toFixed(i === 0 ? 0 : 1)} ${sizes[i]}`;
     }
 
+    const useWorker = location.host.includes('workers.dev') || location.host.includes('retribution-website');
+
     async function refreshMeta() {
         for (const rel of releases) {
             try {
-                const res = await fetch(`https://api.github.com/repos/Retribution-Mod/${rel.repo}/releases/latest`, {
-                    headers: { Accept: 'application/vnd.github+json' }
-                });
-                if (!res.ok) continue;
-                const data = await res.json();
+                let data, assets;
+                if (useWorker) {
+                    const res = await fetch(`/api/releases/${rel.repo}`);
+                    if (!res.ok) continue;
+                    const payload = await res.json();
+                    data = { tag_name: payload.tag, published_at: payload.published, assets: payload.assets || [] };
+                    assets = data.assets;
+                } else {
+                    const res = await fetch(`https://api.github.com/repos/Retribution-Mod/${rel.repo}/releases/latest`, {
+                        headers: { Accept: 'application/vnd.github+json' }
+                    });
+                    if (!res.ok) continue;
+                    data = await res.json();
+                    assets = data.assets;
+                }
 
                 const versionEl = document.getElementById(`${rel.id}-version`);
                 const sizeEl = document.getElementById(`${rel.id}-size`);
@@ -54,8 +66,8 @@
                 if (versionEl) versionEl.textContent = data.tag_name;
                 if (dateEl) dateEl.textContent = new Date(data.published_at).toLocaleDateString();
 
-                let asset = data.assets.find(a => a.name === rel.asset);
-                if (!asset && rel.fallback) asset = data.assets.find(a => a.name === rel.fallback);
+                let asset = assets.find(a => a.name === rel.asset);
+                if (!asset && rel.fallback) asset = assets.find(a => a.name === rel.fallback);
                 if (asset && sizeEl) sizeEl.textContent = fmtBytes(asset.size);
                 if (asset) {
                     const btn = document.getElementById(`${rel.id}-btn`);

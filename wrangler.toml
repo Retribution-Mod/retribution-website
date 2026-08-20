@@ -1,0 +1,6 @@
+name = "retribution-website"
+compatibility_date = "2025-09-06"
+
+# Deploy the static site to Cloudflare Pages
+[site]
+bucket = "."
