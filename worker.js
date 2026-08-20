@@ -17,8 +17,8 @@ function html(body, status = 200) {
   return new Response(body, { status, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
 }
 
-async function proxyUpstream(request, path) {
-  const cache = caches.default;
+async function proxyUpstream(request, ctx, path) {
+  const cache = await caches.open('site-v2');
   const cacheKey = new Request(request.url, request);
   let response = await cache.match(cacheKey);
   if (response) return response;
@@ -33,11 +33,12 @@ async function proxyUpstream(request, path) {
   if (path.endsWith('.css')) headers.set('Content-Type', 'text/css; charset=utf-8');
   else if (path.endsWith('.js')) headers.set('Content-Type', 'application/javascript; charset=utf-8');
   else if (path.endsWith('.json')) headers.set('Content-Type', 'application/json; charset=utf-8');
+  else if (path.endsWith('.png')) headers.set('Content-Type', 'image/png');
 
   response = new Response(upstream.body, { status: upstream.status, headers });
-  if (upstream.ok && !contentType.startsWith('text/html')) {
+  if (upstream.ok && !path.endsWith('.html')) {
     response.headers.set('Cache-Control', 'public, max-age=300');
-    ctx?.waitUntil?.(cache.put(cacheKey, response.clone()));
+    ctx.waitUntil(cache.put(cacheKey, response.clone()));
   }
   return response;
 }
@@ -99,7 +100,7 @@ export default {
     if (request.method === 'OPTIONS') return new Response(null, { headers: CORS_HEADERS });
 
     if (path === '/' || path === '/index.html') {
-      return proxyUpstream(request, '/index.html');
+      return proxyUpstream(request, ctx, '/index.html');
     }
 
     if (path.startsWith('/api/')) {
@@ -132,6 +133,6 @@ export default {
 
     if (path === '/d') return deepLinkPage(url);
 
-    return proxyUpstream(request, path);
+    return proxyUpstream(request, ctx, path);
   }
 };
