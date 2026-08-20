@@ -156,7 +156,7 @@ export default {
         applinks: {
           apps: [],
           details: [{
-            appID: 'TEAMID.com.retribution.discord',
+            appID: '53Q6R32WPB.com.hammerandchisel.discord',
             paths: ['/d', '/browse/*', '/plugins*', '/themes*', '/fonts*']
           }]
         }
