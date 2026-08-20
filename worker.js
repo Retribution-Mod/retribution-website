@@ -45,6 +45,28 @@ async function proxyUpstream(request, ctx, path) {
   return response;
 }
 
+// retribution-tweak publishes the "old" and "341+" IPA variants as two SEPARATE GitHub releases
+// (different tags), so "latest release" only ever contains one variant's asset. Search across the
+// recent releases list for the specific asset by name instead of assuming it's in the latest one.
+async function githubReleaseByAsset(repo, assetName) {
+  const res = await fetch(`${GITHUB_API}/repos/Retribution-Mod/${repo}/releases?per_page=10`, {
+    headers: { Accept: 'application/vnd.github+json', 'User-Agent': 'Retribution-Website' }
+  });
+  if (!res.ok) return json({ error: 'GitHub API failed' }, res.status);
+  const releases = await res.json();
+  for (const data of releases) {
+    const asset = data.assets.find(a => a.name === assetName);
+    if (asset) {
+      return json({
+        tag: data.tag_name,
+        published: data.published_at,
+        asset: { name: asset.name, size: asset.size, url: asset.browser_download_url }
+      });
+    }
+  }
+  return json({ error: 'Asset not found in recent releases' }, 404);
+}
+
 async function githubRelease(repo, fallbackAsset) {
   const res = await fetch(`${GITHUB_API}/repos/Retribution-Mod/${repo}/releases/latest`, {
     headers: { Accept: 'application/vnd.github+json', 'User-Agent': 'Retribution-Website' }
@@ -125,6 +147,13 @@ export default {
 
     if (path.startsWith('/api/')) {
       const rest = path.slice('/api/'.length);
+      if (rest.startsWith('release-asset/')) {
+        const parts = rest.slice('release-asset/'.length).split('/');
+        if (parts.length !== 2) return json({ error: 'Invalid path' }, 400);
+        const [repo, assetName] = parts;
+        if (!repo || repo.includes('..') || !assetName || assetName.includes('..')) return json({ error: 'Invalid repo or asset' }, 400);
+        return githubReleaseByAsset(repo, assetName);
+      }
       if (rest.startsWith('releases/')) {
         const repo = rest.slice('releases/'.length);
         if (!repo || repo.includes('/') || repo.includes('..')) return json({ error: 'Invalid repo' }, 400);
