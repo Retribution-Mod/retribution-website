@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Link Generator — Retribution</title>
+    <meta name="description" content="Generate retribution:// deep links for plugins, themes, and fonts.">
+    <link rel="icon" type="image/png" href="https://retribution-assets.allyapp.workers.dev/icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">
+                <img src="https://retribution-assets.allyapp.workers.dev/icon" alt="Retribution logo">
+                <span>Retribution</span>
+            </a>
+            <nav class="main-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="downloads.html">Downloads</a>
+                <a href="docs/index.html">Docs</a>
+                <a href="plugins.html">Browse</a>
+                <a href="deep-link.html" class="active">Deep Link</a>
+                <a href="https://github.com/Retribution-Mod" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Deep Link Generator</h1>
+            <p>Build a <code>retribution://</code> URL for any plugin, theme, or font. Copy it, share it, or open it on your device.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="docs-content" style="max-width: 720px; margin: 0 auto;">
+                <form id="dl-form" onsubmit="return false;">
+                    <label for="type" style="display: block; margin-bottom: 0.4rem; color: var(--text-2); font-size: 0.9rem;">Type</label>
+                    <select id="type" class="btn" style="width: 100%; text-align: left; margin-bottom: 1rem; background: var(--bg-0); border-color: var(--bg-2); color: var(--text-0);">
+                        <option value="plugin">Plugin</option>
+                        <option value="theme">Theme</option>
+                        <option value="font">Font</option>
+                    </select>
+
+                    <label for="url" style="display: block; margin-bottom: 0.4rem; color: var(--text-2); font-size: 0.9rem;">URL to install from</label>
+                    <input type="url" id="url" placeholder="https://example.com/plugin.js" class="btn" style="width: 100%; text-align: left; margin-bottom: 1rem; background: var(--bg-0); border-color: var(--bg-2); color: var(--text-0);" required>
+
+                    <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 1.5rem;">
+                        For fonts, the URL should point to a font spec JSON. You can use
+                        <code>https://bunny-google-fonts.vercel.app/api/spec?font=<strong>Family Name</strong></code>
+                        for Google Fonts.
+                    </p>
+
+                    <button id="generate" class="btn btn-primary" style="width: 100%; margin-bottom: 1.5rem;">Generate</button>
+
+                    <label style="display: block; margin-bottom: 0.4rem; color: var(--text-2); font-size: 0.9rem;">Deep link</label>
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <input type="text" id="result" readonly class="btn" style="flex: 1; text-align: left; background: var(--bg-0); border-color: var(--bg-2); color: var(--text-0); cursor: text;">
+                        <button type="button" id="copy" class="btn btn-secondary" style="width: auto;">Copy</button>
+                    </div>
+
+                    <div class="text-center mt-1">
+                        <a id="open" class="btn btn-primary" href="#" style="width: auto; display: none;">Open in Retribution</a>
+                    </div>
+
+                    <div id="qr" class="text-center mt-1" style="display: none;">
+                        <p class="text-muted" style="font-size: 0.85rem;">QR code (scan with your phone)</p>
+                        <img id="qr-img" src="" alt="QR code" style="border-radius: var(--radius-sm); background: #fff; padding: 0.5rem;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                <a href="https://github.com/Retribution-Mod">GitHub</a>
+                <a href="docs/index.html">Docs</a>
+                <a href="downloads.html">Downloads</a>
+            </p>
+            <p class="text-muted">Not affiliated with Discord. Use at your own risk.</p>
+        </div>
+    </footer>
+
+    <script src="js/deep-link.js"></script>
+</body>
+</html>

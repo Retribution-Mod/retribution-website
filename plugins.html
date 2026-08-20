@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation — Retribution</title>
-    <meta name="description" content="Documentation for installing, building, and using Retribution.">
+    <title>Browse Plugins — Retribution</title>
+    <meta name="description" content="Browse and install public plugins for Retribution.">
     <link rel="icon" type="image/png" href="https://retribution-assets.allyapp.workers.dev/icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,16 +14,16 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <a class="brand" href="../index.html">
+            <a class="brand" href="index.html">
                 <img src="https://retribution-assets.allyapp.workers.dev/icon" alt="Retribution logo">
                 <span>Retribution</span>
             </a>
             <nav class="main-nav" aria-label="Main">
-                <a href="../index.html">Home</a>
-                <a href="../downloads.html">Downloads</a>
-                <a href="index.html">Docs</a>
-                <a href="../plugins.html">Browse</a>
-                <a href="../deep-link.html">Deep Link</a>
+                <a href="index.html">Home</a>
+                <a href="downloads.html">Downloads</a>
+                <a href="docs/index.html">Docs</a>
+                <a href="plugins.html" class="active">Browse</a>
+                <a href="deep-link.html">Deep Link</a>
                 <a href="https://github.com/Retribution-Mod" target="_blank" rel="noopener">GitHub</a>
             </nav>
             <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
@@ -34,26 +34,23 @@
 
     <section class="page-header">
         <div class="container">
-            <h1>Documentation</h1>
-            <p>Guides and references for installing, building, and troubleshooting Retribution.</p>
+            <h1>Plugin Browser</h1>
+            <p>Browse public plugins from the community catalog. Tap install to copy a deep link or open it in Retribution.</p>
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="browse-app">
         <div class="container">
-            <div class="feature-grid">
-                <a class="feature-card" href="installing.html" style="display: block;">
-                    <h3>Installing</h3>
-                    <p>Step-by-step instructions for Android, iOS, jailbreak, sideload, and Xposed setups.</p>
-                </a>
-                <a class="feature-card" href="building.html" style="display: block;">
-                    <h3>Building</h3>
-                    <p>How to clone, build, and serve the Retribution bundle from source for development.</p>
-                </a>
-                <a class="feature-card" href="faq.html" style="display: block;">
-                    <h3>Field Manual / FAQ</h3>
-                    <p>What Retribution is, how it works, safety, troubleshooting, and where to get help.</p>
-                </a>
+            <nav style="margin-bottom: 1.5rem;">
+                <a class="btn btn-sm btn-secondary" href="plugins.html" style="background: var(--bg-3);">Plugins</a>
+                <a class="btn btn-sm btn-secondary" href="themes.html">Themes</a>
+                <a class="btn btn-sm btn-secondary" href="fonts.html">Fonts</a>
+            </nav>
+
+            <input type="search" id="search" placeholder="Search plugins..." class="btn" style="width: 100%; text-align: left; margin-bottom: 1.5rem; background: var(--bg-0); border-color: var(--bg-2); color: var(--text-0);" autocomplete="off">
+
+            <div class="download-grid" id="results" data-type="plugin" data-source="data/plugins-data.json">
+                <p class="text-muted">Loading plugins...</p>
             </div>
         </div>
     </section>
@@ -62,13 +59,13 @@
         <div class="container">
             <p>
                 <a href="https://github.com/Retribution-Mod">GitHub</a>
-                <a href="index.html">Docs</a>
-                <a href="../downloads.html">Downloads</a>
+                <a href="docs/index.html">Docs</a>
+                <a href="downloads.html">Downloads</a>
             </p>
             <p class="text-muted">Not affiliated with Discord. Use at your own risk.</p>
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="js/browse.js"></script>
 </body>
 </html>
