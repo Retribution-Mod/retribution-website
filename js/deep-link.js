@@ -29,7 +29,7 @@
         openEl.style.display = 'inline-flex';
 
         qrEl.style.display = 'block';
-        qrImg.src = `https://chart.googleapis.com/chart?cht=qr&chs=220x220&chld=H|0&chl=${encodeURIComponent(deep)}`;
+        qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(deep)}`;
     }
 
     typeEl.addEventListener('change', updatePlaceholder);

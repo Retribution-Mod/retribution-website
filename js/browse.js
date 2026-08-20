@@ -82,7 +82,7 @@
         const url = itemUrl(item);
         const link = deepLink(type, url);
         return `
-            <article class="download-card browse-card font-card" data-name="${escapeHtml(item.family.toLowerCase())}" style="font-family: '${escapeHtml(item.family).replace(/'/g, '\\'')}'; --font-name: '${escapeHtml(item.family).replace(/'/g, '\\'')}';" title="Preview font: ${escapeHtml(item.family)}">
+            <article class="download-card browse-card font-card" data-name="${escapeHtml(item.family.toLowerCase())}" title="Preview font: ${escapeHtml(item.family)}">
                 <h3 style="font-family: inherit;">${escapeHtml(item.family)}</h3>
                 <p class="card-subtitle">${escapeHtml(item.category)}</p>
                 <p class="card-description">${escapeHtml(itemDescription(item))}</p>
