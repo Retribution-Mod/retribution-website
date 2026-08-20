@@ -134,10 +134,8 @@ export default {
         return json({
           note: 'Curated list. Manager may still prefer the live tracker.',
           versions: [
-            { code: '241013', name: '241.13 (stable, old)', bundle: 'old' },
-            { code: '241020', name: '241.20 (stable, old)', bundle: 'old' },
-            { code: '341000', name: '341.0 (stable, new)', bundle: 'new' },
-            { code: '341001', name: '341.1 (stable, new)', bundle: 'new' }
+            { code: '340013', name: '340.13 (stable, old)', bundle: 'old' },
+            { code: '341013', name: '341.13 (stable, new)', bundle: 'new' }
           ]
         });
       }
