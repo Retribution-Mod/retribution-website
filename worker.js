@@ -65,10 +65,28 @@ async function githubRelease(repo, fallbackAsset) {
   });
 }
 
+function toDeepLink(type, target) {
+  try {
+    const u = new URL(target);
+    if (type === 'font') {
+      return `font://${u.host}${u.pathname}${u.search}`;
+    }
+    if (type === 'theme' && u.pathname.endsWith('.json')) {
+      return `theme://${u.host}${u.pathname.slice(0, -5)}`;
+    }
+    if (type === 'bundle') {
+      return target; // bundle deep links use retribution:// or manager:// elsewhere
+    }
+    return `plugin://${u.host}${u.pathname.replace(/\/$/, '')}`;
+  } catch {
+    return target;
+  }
+}
+
 async function deepLinkPage(url) {
   const type = url.searchParams.get('type') || 'plugin';
   const target = url.searchParams.get('url') || '';
-  const deep = `retribution://${type}?url=${encodeURIComponent(target)}`;
+  const deep = toDeepLink(type, target);
   return html(`<!DOCTYPE html>
 <html lang="en">
 <head>

@@ -17,7 +17,19 @@
     }
 
     function deepLink(type, url) {
-        return `retribution://${type}?url=${encodeURIComponent(url)}`;
+        try {
+            const u = new URL(url);
+            if (type === 'font') {
+                return `font://${u.host}${u.pathname}${u.search}`;
+            }
+            if (type === 'theme' && u.pathname.endsWith('.json')) {
+                return `theme://${u.host}${u.pathname.slice(0, -5)}`;
+            }
+            // plugin
+            return `plugin://${u.host}${u.pathname.replace(/\/$/, '')}`;
+        } catch {
+            return url;
+        }
     }
 
     function escapeHtml(str) {

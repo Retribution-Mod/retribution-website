@@ -9,7 +9,7 @@
     const qrImg = document.getElementById('qr-img');
 
     const placeholders = {
-        plugin: 'https://example.com/plugin.js',
+        plugin: 'https://example.com/plugin/',
         theme: 'https://example.com/theme.json',
         font: 'https://bunny-google-fonts.vercel.app/api/spec?font=Roboto'
     };
@@ -18,11 +18,26 @@
         urlEl.placeholder = placeholders[typeEl.value];
     }
 
+    function toDeepLink(type, url) {
+        try {
+            const u = new URL(url);
+            if (type === 'font') {
+                return `font://${u.host}${u.pathname}${u.search}`;
+            }
+            if (type === 'theme' && u.pathname.endsWith('.json')) {
+                return `theme://${u.host}${u.pathname.slice(0, -5)}`;
+            }
+            return `plugin://${u.host}${u.pathname.replace(/\/$/, '')}`;
+        } catch {
+            return url;
+        }
+    }
+
     function generate() {
         const type = typeEl.value;
         const url = urlEl.value.trim();
         if (!url) return;
-        const deep = `retribution://${type}?url=${encodeURIComponent(url)}`;
+        const deep = toDeepLink(type, url);
         resultEl.value = deep;
 
         openEl.href = deep;
