@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retribution — Discord client modification for Android & iOS</title>
+    <meta name="description" content="Retribution is a client modification for Discord on Android and iOS. Load plugins, themes, and fonts. Built on the open-source Bunny loader stack.">
+    <link rel="icon" type="image/png" href="https://retribution-assets.allyapp.workers.dev/icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <base href=".">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">
+                <img src="https://retribution-assets.allyapp.workers.dev/icon" alt="Retribution logo">
+                <span>Retribution</span>
+            </a>
+            <nav class="main-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="downloads.html">Downloads</a>
+                <a href="docs/index.html">Docs</a>
+                <a href="https://github.com/Retribution-Mod" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img class="hero-logo" src="https://retribution-assets.allyapp.workers.dev/icon" alt="Retribution">
+            <h1>Retribution</h1>
+            <p>A client modification for Discord on Android and iOS. Run plugins, themes, and fonts — your app, your rules.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="downloads.html">Download</a>
+                <a class="btn btn-secondary" href="docs/index.html">Read the docs</a>
+            </div>
+            <p class="hero-note">Open source. Free. Built on the Bunny loader stack.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">What you get</h2>
+            <p class="section-subtitle">Retribution extends Discord without replacing it. It runs inside the official app and gives you real control over the client.</p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Plugins</h3>
+                    <p>Install from a built-in browser or paste a URL. Vendetta, Revenge, and Bunny plugins work out of the box.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Themes</h3>
+                    <p>Recolor Discord with community themes or make your own. Full raw and semantic color support.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fonts</h3>
+                    <p>Swap Discord's typeface with any Google Font, or install a custom font spec.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Open source</h3>
+                    <p>All source is public. The bundle, manager, loaders, and docs are on GitHub under the Retribution-Mod organization.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Developer tools</h3>
+                    <p>Built-in React DevTools, custom bundle URLs, eval console, and a recovery mode for when things go wrong.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Android + iOS</h3>
+                    <p>Install with the manager on Android, or use the Xposed module, sideload, jailbreak, or TrollStore on iOS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-1); border-top: 1px solid var(--bg-2);">
+        <div class="container text-center">
+            <h2 class="section-title">Ready to start?</h2>
+            <p class="section-subtitle" style="margin: 0 auto 1.5rem;">Pick your platform and grab the latest release. The install docs walk you through every step.</p>
+            <a class="btn btn-primary" href="downloads.html">Get Retribution</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                <a href="https://github.com/Retribution-Mod">GitHub</a>
+                <a href="docs/index.html">Docs</a>
+                <a href="downloads.html">Downloads</a>
+            </p>
+            <p class="text-muted">Not affiliated with Discord. Use at your own risk.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

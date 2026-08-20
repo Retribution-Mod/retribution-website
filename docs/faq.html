@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Manual / FAQ — Retribution Docs</title>
+    <meta name="description" content="Frequently asked questions about Retribution, its safety, compatibility, and troubleshooting.">
+    <link rel="icon" type="image/png" href="https://retribution-assets.allyapp.workers.dev/icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="../index.html">
+                <img src="https://retribution-assets.allyapp.workers.dev/icon" alt="Retribution logo">
+                <span>Retribution</span>
+            </a>
+            <nav class="main-nav" aria-label="Main">
+                <a href="../index.html">Home</a>
+                <a href="../downloads.html">Downloads</a>
+                <a href="index.html">Docs</a>
+                <a href="https://github.com/Retribution-Mod" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="container docs-layout">
+        <aside class="docs-sidebar">
+            <a href="index.html">Docs home</a>
+            <a href="installing.html">Installing</a>
+            <a href="building.html">Building</a>
+            <a href="faq.html">Field Manual / FAQ</a>
+        </aside>
+
+        <main class="docs-content">
+            <h1>Field Manual: Retribution</h1>
+            <p>A no-bullshit guide to what Retribution is, what it isn't, and how to keep it running.</p>
+
+            <h2>What is Retribution?</h2>
+            <p><strong>The short version:</strong> Retribution is a client modification for Discord on Android and iOS. It lets you load plugins, themes, and fonts to make Discord behave and look the way you want.</p>
+            <p><strong>The longer version:</strong> It is a continuation of the Bunny project, built on the same loader ideas as Vendetta and Pyoncord. It does not replace Discord on a server level — it runs inside the Discord app you already know, after the manager or tweak has done its job.</p>
+
+            <h2>Is Retribution safe?</h2>
+            <p>Nothing that modifies a client app is "officially safe." Retribution is open source and the code is public, but it is not affiliated with Discord. Discord can update its app, change its Terms of Service, or take action against accounts that use client mods. We are not responsible for that.</p>
+            <p>Use it because you want it, not because you think it is invisible.</p>
+
+            <h2>Will Retribution work on the latest Discord?</h2>
+            <p>Not automatically. Retribution releases are tied to specific Discord versions. The manager and tweak both target a known-good Discord build. If Discord updates and Retribution has not been updated for it, wait.</p>
+            <ul>
+                <li><strong>Android:</strong> the manager shows the supported Discord versions when you open it.</li>
+                <li><strong>iOS:</strong> the <code>.ipa</code> or <code>.deb</code> release name tells you which Discord version it matches (for example, <code>v340.0</code>).</li>
+            </ul>
+            <p>The JavaScript bundle itself auto-updates from the latest <code>retribution-bundle</code> release, but the loader underneath still needs to match Discord.</p>
+
+            <h2>How do I install it?</h2>
+            <p>See the <a href="installing.html">Installing guide</a>.</p>
+
+            <h2>How do I install plugins, themes, or fonts?</h2>
+            <p>Three ways.</p>
+            <ol>
+                <li><strong>Inside the app:</strong> open <strong>Retribution Settings</strong> and use the plugin, theme, or font store.</li>
+                <li><strong>Deep links:</strong> click or type a <code>retribution://</code> URL.
+                    <ul>
+                        <li><code>retribution://plugin?url=https%3a%2f%2fexample.com%2fplugin.js</code></li>
+                        <li><code>retribution://theme?url=https%3a%2f%2fexample.com%2ftheme.json</code></li>
+                        <li><code>retribution://font?url=https%3a%2f%2fexample.com%2ffont.json</code></li>
+                    </ul>
+                </li>
+                <li><strong>Manual:</strong> go to <strong>Retribution Settings</strong> &gt; <strong>Plugins</strong>, <strong>Themes</strong>, or <strong>Fonts</strong> and paste a raw URL.</li>
+            </ol>
+
+            <h2>Do plugins from Vendetta / Revenge / Bunny work?</h2>
+            <p>Most of them, yes. Retribution uses the same plugin API. Some plugins may need updates for newer Discord versions or for Retribution-specific features. If a plugin breaks, check with the plugin author first.</p>
+
+            <h2>Retribution is not loading / settings are missing</h2>
+            <p>Try this in order.</p>
+            <ol>
+                <li>Force-close Discord completely, then reopen it.</li>
+                <li>Make sure you have an internet connection for the first bundle download.</li>
+                <li>Check that your Discord version matches the supported version for your Retribution build.</li>
+                <li>On iOS sideloads, make sure the app has network access and is not expired.</li>
+                <li>Clear the JavaScript bundle in <strong>Retribution Settings</strong> &gt; <strong>Developer</strong> &gt; <strong>Clear JS bundle</strong> if that option is available.</li>
+            </ol>
+
+            <h2>Why don't passkeys work?</h2>
+            <p>Passkeys are tied to the app's original signing identity. When the Android manager patches Discord, it resigns the APK. That breaks passkey support.</p>
+            <p>If you need passkeys, use <strong>retribution-xposed</strong> with root/LSPosed instead. It does not patch or resign the APK, so passkeys keep working.</p>
+
+            <h2>Why don't I get push notifications on iOS?</h2>
+            <p>Sideloaded apps with a free Apple ID cannot use real push notifications. Apple restricts <code>aps-environment</code> to apps signed with a paid developer account or an enterprise/distribution certificate.</p>
+            <p>If push notifications matter to you, use a service like Signulous that supports distribution signing with push entitlements, and keep the original <code>com.hammerandchisel.discord</code> bundle identifier. Jailbreak/TrollStore users generally do not have this limitation.</p>
+
+            <h2>How do I update Retribution?</h2>
+            <p>It depends on how you installed it.</p>
+            <ul>
+                <li><strong>Android manager:</strong> the manager checks for updates on open and prompts you.</li>
+                <li><strong>Android Xposed:</strong> update the <code>retribution-xposed</code> APK.</li>
+                <li><strong>iOS sideload:</strong> install the latest matching <code>Retribution.ipa</code>.</li>
+                <li><strong>iOS jailbreak/TrollStore:</strong> update the <code>.deb</code> package.</li>
+            </ul>
+            <p>The JavaScript bundle updates automatically from the latest <code>retribution-bundle</code> release when you restart Discord.</p>
+
+            <h2>How do I build the bundle myself?</h2>
+            <p>See the <a href="building.html">Building guide</a>.</p>
+
+            <h2>Where do I get help?</h2>
+            <ul>
+                <li>Bug reports and feature requests: <a href="https://github.com/Retribution-Mod/retribution-bundle/issues" target="_blank" rel="noopener">GitHub issues</a></li>
+                <li>Community support: the Discord server linked in the main README.</li>
+            </ul>
+
+            <h2>Can I recode the manager to be completely unique?</h2>
+            <p>Yes. The manager is a shell around a small set of operations: download Discord, patch resources and smali, sign the APK, and install it. A full rewrite or deep reskin can give it an entirely different look, flow, and architecture.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                <a href="https://github.com/Retribution-Mod">GitHub</a>
+                <a href="index.html">Docs</a>
+                <a href="../downloads.html">Downloads</a>
+            </p>
+            <p class="text-muted">Not affiliated with Discord. Use at your own risk.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

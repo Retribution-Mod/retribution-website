@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building — Retribution Docs</title>
+    <meta name="description" content="How to build the Retribution bundle from source.">
+    <link rel="icon" type="image/png" href="https://retribution-assets.allyapp.workers.dev/icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="../index.html">
+                <img src="https://retribution-assets.allyapp.workers.dev/icon" alt="Retribution logo">
+                <span>Retribution</span>
+            </a>
+            <nav class="main-nav" aria-label="Main">
+                <a href="../index.html">Home</a>
+                <a href="../downloads.html">Downloads</a>
+                <a href="index.html">Docs</a>
+                <a href="https://github.com/Retribution-Mod" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="container docs-layout">
+        <aside class="docs-sidebar">
+            <a href="index.html">Docs home</a>
+            <a href="installing.html">Installing</a>
+            <a href="building.html">Building</a>
+            <a href="faq.html">Field Manual / FAQ</a>
+        </aside>
+
+        <main class="docs-content">
+            <h1>Building</h1>
+
+            <ol>
+                <li>Install a Retribution loader with config support (any mentioned in <a href="installing.html">Installing</a>).</li>
+                <li>Go to <strong>Settings</strong> &gt; <strong>General</strong> and enable <strong>Developer Settings</strong>.</li>
+                <li>Clone the repository
+                    <pre><code>git clone https://github.com/Retribution-Mod/retribution-bundle.git</code></pre>
+                </li>
+                <li>Install dependencies
+                    <pre><code>bun i</code></pre>
+                </li>
+                <li>Build Retribution's code
+                    <pre><code>bun run build</code></pre>
+                </li>
+                <li>In the newly created <code>dist</code> directory, run a HTTP server. We recommend <a href="https://www.npmjs.com/package/http-server" target="_blank" rel="noopener">http-server</a>.</li>
+                <li>Go to <strong>Settings</strong> &gt; <strong>Developer</strong> enabled earlier. Enable <code>Load from custom URL</code> and input the IP address and port of the server (e.g. <code>http://192.168.1.236:4040/retribution.js</code>) in the new input box labeled <code>Retribution URL</code>.</li>
+                <li>Restart Discord. Upon reload, your device will download Retribution's bundled code from your server, rather than GitHub.</li>
+                <li>Make your changes, rebuild, reload, go wild!</li>
+            </ol>
+
+            <p>Alternatively, you can directly <em>serve</em> the bundled code by running <code>bun serve</code>. <code>retribution.js</code> will be served on your local address under the port <code>4040</code>. You will then insert <code>http://&lt;local ip address&gt;:4040/retribution.js</code> as a custom URL and reload. Whenever you restart your mobile client, the script will rebuild the bundle as your client fetches it.</p>
+
+            <p>If the bundle keeps being cached and not updated, you can instead tap the <strong>Settings</strong> &gt; <strong>Developer</strong> &gt; <strong>Clear JS bundle</strong> option which will prompt you to reload.</p>
+
+            <h2>Build targets</h2>
+            <p>The classic bundle supports two build targets:</p>
+            <ul>
+                <li><code>bun run build --target old</code> — for Discord builds 340.x and below.</li>
+                <li><code>bun run build --target new</code> — for Discord builds 341.x and above (RN 0.86+).</li>
+            </ul>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                <a href="https://github.com/Retribution-Mod">GitHub</a>
+                <a href="index.html">Docs</a>
+                <a href="../downloads.html">Downloads</a>
+            </p>
+            <p class="text-muted">Not affiliated with Discord. Use at your own risk.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

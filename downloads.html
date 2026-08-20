@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads — Retribution</title>
+    <meta name="description" content="Download the latest Retribution manager, Xposed module, iOS tweak, and JavaScript bundles.">
+    <link rel="icon" type="image/png" href="https://retribution-assets.allyapp.workers.dev/icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">
+                <img src="https://retribution-assets.allyapp.workers.dev/icon" alt="Retribution logo">
+                <span>Retribution</span>
+            </a>
+            <nav class="main-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="downloads.html">Downloads</a>
+                <a href="docs/index.html">Docs</a>
+                <a href="https://github.com/Retribution-Mod" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Downloads</h1>
+            <p>All releases are served directly from GitHub. The site will refresh version, size, and date information when it loads.</p>
+        </div>
+    </section>
+
+    <section class="section" data-release>
+        <div class="container">
+            <h2 class="section-title">Android</h2>
+            <p class="section-subtitle">Non-root users should use the Manager. Root/LSPosed users can use the Xposed module.</p>
+            <div class="download-grid">
+                <article class="download-card" data-release id="manager">
+                    <span class="tag">Manager</span>
+                    <h3>Retribution Manager</h3>
+                    <p>Downloads, patches, signs, and installs a supported Discord APK. No root required.</p>
+                    <div class="download-meta">
+                        <span id="manager-version">v1.3.0</span>
+                        <span id="manager-size">17.1 MB</span>
+                        <span id="manager-date">Aug 19, 2026</span>
+                    </div>
+                    <a id="manager-btn" class="btn btn-primary" href="https://github.com/Retribution-Mod/retribution-manager/releases/latest" target="_blank" rel="noopener">Download APK</a>
+                </article>
+
+                <article class="download-card" data-release id="xposed">
+                    <span class="tag">Xposed</span>
+                    <h3>Retribution Xposed</h3>
+                    <p>Module for rooted devices with Xposed or LSPosed. Patches nothing, so passkeys keep working.</p>
+                    <div class="download-meta">
+                        <span id="xposed-version">v1.0.0</span>
+                        <span id="xposed-size">3.0 MB</span>
+                        <span id="xposed-date">Aug 18, 2026</span>
+                    </div>
+                    <a id="xposed-btn" class="btn btn-primary" href="https://github.com/Retribution-Mod/retribution-xposed/releases/latest/download/app-release.apk">Download APK</a>
+                </article>
+            </div>
+
+            <h2 class="section-title mt-2">iOS</h2>
+            <p class="section-subtitle">Pick the option that matches your setup. The IPA is for sideloading; the .deb files are for jailbreak/TrollStore.</p>
+            <div class="download-grid">
+                <article class="download-card" data-release id="tweak-ipa">
+                    <span class="tag">Sideload</span>
+                    <h3>Retribution IPA</h3>
+                    <p>Sideload this Discord IPA with AltStore, Sideloadly, Signulous, or similar tools. Tied to a Discord build version.</p>
+                    <div class="download-meta">
+                        <span id="tweak-ipa-version">v340.0-2.0.4</span>
+                        <span id="tweak-ipa-size">93.3 MB</span>
+                        <span id="tweak-ipa-date">Aug 19, 2026</span>
+                    </div>
+                    <a id="tweak-ipa-btn" class="btn btn-primary" href="https://github.com/Retribution-Mod/retribution-tweak/releases/latest/download/Retribution.ipa">Download IPA</a>
+                </article>
+
+                <article class="download-card" data-release id="tweak-deb">
+                    <span class="tag">Jailbreak</span>
+                    <h3>Retribution .deb</h3>
+                    <p>Package for jailbroken devices. Choose arm64 for rootless, arm for rootful.</p>
+                    <div class="download-meta">
+                        <span id="tweak-deb-version">v340.0-2.0.4</span>
+                        <span id="tweak-deb-size">2.3 MB</span>
+                        <span id="tweak-deb-date">Aug 19, 2026</span>
+                    </div>
+                    <a id="tweak-deb-btn" class="btn btn-primary" href="https://github.com/Retribution-Mod/retribution-tweak/releases/latest">Download .deb</a>
+                </article>
+            </div>
+
+            <h2 class="section-title mt-2">JavaScript bundles</h2>
+            <p class="section-subtitle">These are loaded automatically by the manager or tweak, but you can grab them manually for custom loaders or development.</p>
+            <div class="download-grid">
+                <article class="download-card" data-release id="bundle-old">
+                    <span class="tag">Classic</span>
+                    <h3>Classic Bundle (old)</h3>
+                    <p>Targeted at Discord builds 340.x and below. Uses React Native 0.81.4 / HBC 96.</p>
+                    <div class="download-meta">
+                        <span id="bundle-old-version">v0.0.1.3</span>
+                        <span id="bundle-old-size">3.1 MB</span>
+                        <span id="bundle-old-date">Aug 19, 2026</span>
+                    </div>
+                    <a id="bundle-old-btn" class="btn btn-primary" href="https://github.com/Retribution-Mod/retribution-bundle/releases/latest/download/retribution-old.min.js">Download JS</a>
+                </article>
+
+                <article class="download-card" data-release id="bundle-new">
+                    <span class="tag">Classic</span>
+                    <h3>Classic Bundle (new)</h3>
+                    <p>Targeted at Discord builds 341.x and above. Uses React Native 0.86 / HBC 98.</p>
+                    <div class="download-meta">
+                        <span id="bundle-new-version">v0.0.1.3</span>
+                        <span id="bundle-new-size">3.1 MB</span>
+                        <span id="bundle-new-date">Aug 19, 2026</span>
+                    </div>
+                    <a id="bundle-new-btn" class="btn btn-primary" href="https://github.com/Retribution-Mod/retribution-bundle/releases/latest/download/retribution-new.min.js">Download JS</a>
+                </article>
+
+                <article class="download-card" data-release id="bundle-next">
+                    <span class="tag">Next</span>
+                    <h3>Next Bundle</h3>
+                    <p>Experimental rewrite with a new architecture. Not a full release yet, but available for early testing.</p>
+                    <div class="download-meta">
+                        <span id="bundle-next-version">v0.1.0</span>
+                        <span id="bundle-next-size">386 KB</span>
+                        <span id="bundle-next-date">Aug 18, 2026</span>
+                    </div>
+                    <a id="bundle-next-btn" class="btn btn-primary" href="https://github.com/Retribution-Mod/retribution-bundle-next/releases/latest/download/retribution.min.js">Download JS</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                <a href="https://github.com/Retribution-Mod">GitHub</a>
+                <a href="docs/index.html">Docs</a>
+                <a href="index.html">Home</a>
+            </p>
+            <p class="text-muted">Not affiliated with Discord. Use at your own risk.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

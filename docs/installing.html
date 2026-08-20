@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installing — Retribution Docs</title>
+    <meta name="description" content="How to install Retribution on Android and iOS.">
+    <link rel="icon" type="image/png" href="https://retribution-assets.allyapp.workers.dev/icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="../index.html">
+                <img src="https://retribution-assets.allyapp.workers.dev/icon" alt="Retribution logo">
+                <span>Retribution</span>
+            </a>
+            <nav class="main-nav" aria-label="Main">
+                <a href="../index.html">Home</a>
+                <a href="../downloads.html">Downloads</a>
+                <a href="index.html">Docs</a>
+                <a href="https://github.com/Retribution-Mod" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="container docs-layout">
+        <aside class="docs-sidebar">
+            <a href="index.html">Docs home</a>
+            <a href="installing.html">Installing</a>
+            <a href="building.html">Building</a>
+            <a href="faq.html">Field Manual / FAQ</a>
+        </aside>
+
+        <main class="docs-content">
+            <h1>Installing</h1>
+            <p>This guide covers how to install Retribution on Android and iOS.</p>
+
+            <h2>Android (non-root)</h2>
+            <ol>
+                <li>Download the latest <code>retribution-manager-*.apk</code> from <a href="https://github.com/Retribution-Mod/retribution-manager/releases/latest" target="_blank" rel="noopener">retribution-manager releases</a>.</li>
+                <li>Install the APK and open it.</li>
+                <li>The manager will show the latest supported Discord versions. Tap <strong>Install</strong> to download, patch, and install Discord.</li>
+                <li>Once installed, open Discord. Retribution should load automatically.</li>
+            </ol>
+            <blockquote>
+                <strong>Tip:</strong> If a new Retribution Manager version is available, the manager will prompt you to update itself when you open it.
+            </blockquote>
+
+            <h2>Android (root with Xposed/LSPosed)</h2>
+            <ol>
+                <li>Download the latest <code>retribution-xposed</code> APK from <a href="https://github.com/Retribution-Mod/retribution-xposed/releases/latest" target="_blank" rel="noopener">retribution-xposed releases</a>.</li>
+                <li>Install the APK and enable the module in your Xposed/LSPosed manager.</li>
+                <li>Make sure the module is applied to the official Discord app.</li>
+                <li>Open Discord. Retribution should load automatically.</li>
+            </ol>
+
+            <h2>iOS (sideloading)</h2>
+            <ol>
+                <li>Download the latest <code>Retribution.ipa</code> from <a href="https://github.com/Retribution-Mod/retribution-tweak/releases/latest" target="_blank" rel="noopener">retribution-tweak releases</a>. The release is tied to a specific Discord version (for example, <code>v340.0</code>).</li>
+                <li>Use your preferred sideloading tool to install the IPA.</li>
+                <li>Open the sideloaded Discord app. Retribution will download the latest bundle and load.</li>
+            </ol>
+
+            <h2>iOS (jailbreak / TrollStore)</h2>
+            <ol>
+                <li>Download the appropriate <code>.deb</code> from <a href="https://github.com/Retribution-Mod/retribution-tweak/releases/latest" target="_blank" rel="noopener">retribution-tweak releases</a>:
+                    <ul>
+                        <li><code>iphoneos-arm.deb</code> for rootful jailbreaks.</li>
+                        <li><code>iphoneos-arm64.deb</code> for rootless jailbreaks.</li>
+                    </ul>
+                </li>
+                <li>Install the <code>.deb</code> with your package manager (TrollStore, Filza, Sileo, Zebra, etc.).</li>
+                <li>The tweak will inject into the official Discord app on launch.</li>
+            </ol>
+
+            <h2>After installation</h2>
+            <ul>
+                <li>The first launch may take a moment while Retribution downloads the latest JavaScript bundle.</li>
+                <li>If Retribution does not appear, force-close Discord and reopen it.</li>
+            </ul>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                <a href="https://github.com/Retribution-Mod">GitHub</a>
+                <a href="index.html">Docs</a>
+                <a href="../downloads.html">Downloads</a>
+            </p>
+            <p class="text-muted">Not affiliated with Discord. Use at your own risk.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
