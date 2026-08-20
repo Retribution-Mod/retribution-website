@@ -30,7 +30,8 @@ async function proxyUpstream(request, ctx, path) {
   headers.delete('set-cookie');
 
   const contentType = headers.get('content-type') || '';
-  if (path.endsWith('.css')) headers.set('Content-Type', 'text/css; charset=utf-8');
+  if (path.endsWith('.html')) headers.set('Content-Type', 'text/html; charset=utf-8');
+  else if (path.endsWith('.css')) headers.set('Content-Type', 'text/css; charset=utf-8');
   else if (path.endsWith('.js')) headers.set('Content-Type', 'application/javascript; charset=utf-8');
   else if (path.endsWith('.json')) headers.set('Content-Type', 'application/json; charset=utf-8');
   else if (path.endsWith('.png')) headers.set('Content-Type', 'image/png');
