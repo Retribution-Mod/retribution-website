@@ -151,6 +151,18 @@ export default {
 
     if (path === '/d') return deepLinkPage(url);
 
+    if (path === '/.well-known/apple-app-site-association') {
+      return json({
+        applinks: {
+          apps: [],
+          details: [{
+            appID: 'TEAMID.com.retribution.discord',
+            paths: ['/d', '/browse/*', '/plugins*', '/themes*', '/fonts*']
+          }]
+        }
+      });
+    }
+
     return proxyUpstream(request, ctx, path);
   }
 };
