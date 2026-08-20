@@ -28,6 +28,7 @@ async function proxyUpstream(request, ctx, path) {
 
   const headers = new Headers(upstream.headers);
   headers.delete('set-cookie');
+  headers.delete('content-security-policy');
 
   const contentType = headers.get('content-type') || '';
   if (path.endsWith('.html')) headers.set('Content-Type', 'text/html; charset=utf-8');
