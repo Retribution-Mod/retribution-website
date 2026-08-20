@@ -27,7 +27,8 @@
         { repo: 'retribution-bundle-next', asset: 'retribution.min.js', id: 'bundle-next' },
         { repo: 'retribution-xposed', asset: 'app-release.apk', id: 'xposed' },
         { repo: 'retribution-manager', asset: 'retribution-manager-1.3.0.apk', id: 'manager' },
-        { repo: 'retribution-tweak', asset: 'Retribution.ipa', id: 'tweak-ipa' },
+        { repo: 'retribution-tweak', asset: 'Retribution-old.ipa', id: 'tweak-ipa-old', searchReleases: true },
+        { repo: 'retribution-tweak', asset: 'Retribution-new.ipa', id: 'tweak-ipa-new', searchReleases: true },
         { repo: 'retribution-tweak', asset: 'io.github.retribution-mod.app_2.0.4_iphoneos-arm64.deb', fallback: 'io.github.retribution-mod.app_2.0.4_iphoneos-arm.deb', id: 'tweak-deb' },
     ];
 
@@ -44,7 +45,29 @@
         for (const rel of releases) {
             try {
                 let data, assets;
-                if (useWorker) {
+                if (rel.searchReleases) {
+                    // This repo publishes each variant as a separate release (different tags), so
+                    // "latest release" may not contain this asset at all - search recent releases
+                    // for the one that actually has it.
+                    if (useWorker) {
+                        const res = await fetch(`/api/release-asset/${rel.repo}/${rel.asset}`);
+                        if (!res.ok) continue;
+                        const payload = await res.json();
+                        if (!payload.asset) continue;
+                        data = { tag_name: payload.tag, published_at: payload.published };
+                        assets = [payload.asset];
+                    } else {
+                        const res = await fetch(`https://api.github.com/repos/Retribution-Mod/${rel.repo}/releases?per_page=10`, {
+                            headers: { Accept: 'application/vnd.github+json' }
+                        });
+                        if (!res.ok) continue;
+                        const releaseList = await res.json();
+                        const match = releaseList.find(r => r.assets.some(a => a.name === rel.asset));
+                        if (!match) continue;
+                        data = match;
+                        assets = match.assets;
+                    }
+                } else if (useWorker) {
                     const res = await fetch(`/api/releases/${rel.repo}`);
                     if (!res.ok) continue;
                     const payload = await res.json();
