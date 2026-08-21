@@ -36,7 +36,7 @@
     "name": "Rogue",
     "description": "a bad-ass looking Dark Grey & Red theme (DARK MODE REQUIRED)",
     "authors": [
-      "Λrtful"
+      "Îrtful"
     ],
     "sourceUrl": "https://github.com/cyriotic3/VendettaThemes",
     "installUrl": "https://raw.githubusercontent.com/cyriotic3/VendettaThemes/main/rogue.json",
@@ -51,7 +51,7 @@
   },
   {
     "name": "Purpl",
-    "description": "A purple theme based off my Material You™ color scheme",
+    "description": "A purple theme based off my Material Youâ¢ color scheme",
     "authors": [
       "Ari"
     ],
@@ -85,7 +85,7 @@
     "name": "Rogue+",
     "description": "when dark grey isn't enough (AMOLED/Black version of Rogue, AMOLED MODE REQUIRED)",
     "authors": [
-      "Λrtful"
+      "Îrtful"
     ],
     "sourceUrl": "https://github.com/cyriotic3/VendettaThemes",
     "installUrl": "https://raw.githubusercontent.com/cyriotic3/VendettaThemes/main/rogueplus.json",
@@ -412,7 +412,7 @@
     ]
   },
   {
-    "name": "諸元 [Shōgen]",
+    "name": "è«¸å [ShÅgen]",
     "description": "A greyish theme with a Red Moon.",
     "authors": [
       "Ari"
@@ -465,7 +465,7 @@
   },
   {
     "name": "RosieSkies",
-    "description": "The same, but Rosiefied™ :3",
+    "description": "The same, but Rosiefiedâ¢ :3",
     "authors": [
       "Ari"
     ],
@@ -928,7 +928,7 @@
   },
   {
     "name": "TokyoNight",
-    "description": "’So just like that you’re fucking dead and gone’",
+    "description": "âSo just like that youâre fucking dead and goneâ",
     "authors": [
       "@Olivia"
     ],
@@ -1097,7 +1097,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Blue",
+    "name": "Catppuccin FrappÃ© - Blue",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1114,7 +1114,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Flamingo",
+    "name": "Catppuccin FrappÃ© - Flamingo",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1131,7 +1131,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Green",
+    "name": "Catppuccin FrappÃ© - Green",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1148,7 +1148,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Lavender",
+    "name": "Catppuccin FrappÃ© - Lavender",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1165,7 +1165,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Maroon",
+    "name": "Catppuccin FrappÃ© - Maroon",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1182,7 +1182,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Mauve",
+    "name": "Catppuccin FrappÃ© - Mauve",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1199,7 +1199,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Peach",
+    "name": "Catppuccin FrappÃ© - Peach",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1216,7 +1216,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Pink",
+    "name": "Catppuccin FrappÃ© - Pink",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1233,7 +1233,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Red",
+    "name": "Catppuccin FrappÃ© - Red",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1250,7 +1250,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Rosewater",
+    "name": "Catppuccin FrappÃ© - Rosewater",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1267,7 +1267,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Sapphire",
+    "name": "Catppuccin FrappÃ© - Sapphire",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1284,7 +1284,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Sky",
+    "name": "Catppuccin FrappÃ© - Sky",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1301,7 +1301,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Teal",
+    "name": "Catppuccin FrappÃ© - Teal",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -1318,7 +1318,7 @@
     ]
   },
   {
-    "name": "Catppuccin Frappé - Yellow",
+    "name": "Catppuccin FrappÃ© - Yellow",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       "Catppuccin"
@@ -2317,10 +2317,10 @@
     ]
   },
   {
-    "name": "𐌌 blue dino",
+    "name": "ð blue dino",
     "description": "Dark and blue gradients with dino wallpaper",
     "authors": [
-      "𐌌risky"
+      "ðrisky"
     ],
     "sourceUrl": "https://github.com/0nlyrisk/Blue-black-dino",
     "installUrl": "https://raw.githubusercontent.com/0nlyrisk/Blue-black-dino/refs/heads/main/Blue%26Black%20dino",
@@ -2718,7 +2718,7 @@
     "name": "Darkened Amethyst",
     "description": "A dark theme with purple accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Amethyst_min.json",
@@ -2735,7 +2735,7 @@
     "name": "Darkened Blood",
     "description": "A dark theme with red accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Blood_min.json",
@@ -2749,10 +2749,10 @@
     ]
   },
   {
-    "name": "Darkened Barbie™",
+    "name": "Darkened Barbieâ¢",
     "description": "A dark theme with pink accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Barbie_min.json",
@@ -2769,7 +2769,7 @@
     "name": "Darkened Basic",
     "description": "A simple, darker theme.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Basic_min.json",
@@ -2784,7 +2784,7 @@
     "name": "Darkened Gold",
     "description": "A dark theme with gold accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Gold_min.json",
@@ -2801,7 +2801,7 @@
     "name": "Darkened Ice",
     "description": "A dark theme with cyan accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Ice_min.json",
@@ -2818,7 +2818,7 @@
     "name": "Darkened Acid",
     "description": "A dark theme with lime accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Acid_min.json",
@@ -2835,7 +2835,7 @@
     "name": "Darkened Blossom",
     "description": "A dark theme with blossom pink accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Blossom_min.json",
@@ -2852,7 +2852,7 @@
     "name": "Darkened Amethyst (AMOLED)",
     "description": "A dark theme with purple accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Amethyst_AMOLED_min.json",
@@ -2869,7 +2869,7 @@
     "name": "Darkened Blood (AMOLED)",
     "description": "A dark theme with red accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Blood_AMOLED_min.json",
@@ -2883,10 +2883,10 @@
     ]
   },
   {
-    "name": "Darkened Barbie™ (AMOLED)",
+    "name": "Darkened Barbieâ¢ (AMOLED)",
     "description": "A dark theme with pink accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Barbie_AMOLED_min.json",
@@ -2903,7 +2903,7 @@
     "name": "Darkened Basic (AMOLED)",
     "description": "A simple, darker theme.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Basic_AMOLED_min.json",
@@ -2918,7 +2918,7 @@
     "name": "Darkened Gold (AMOLED)",
     "description": "A dark theme with gold accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Gold_AMOLED_min.json",
@@ -2935,7 +2935,7 @@
     "name": "Darkened Ice (AMOLED)",
     "description": "A dark theme with cyan accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Ice_AMOLED_min.json",
@@ -2952,7 +2952,7 @@
     "name": "Darkened Acid (AMOLED)",
     "description": "A dark theme with lime accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Acid_AMOLED_min.json",
@@ -2969,7 +2969,7 @@
     "name": "Darkened Blossom (AMOLED)",
     "description": "A dark theme with blossom pink accents.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "sourceUrl": "https://github.com/Purple-EyeZ/Darkened-Collection",
     "installUrl": "https://raw.githubusercontent.com/Purple-EyeZ/Darkened-Collection/refs/heads/main/minified_themes/Darkened_Blossom_AMOLED_min.json",
@@ -3178,8 +3178,8 @@
     "sourceUrl": "https://github.com/UMR-Chan/Amoled-Anime-theme-Ram-From-Re-zero-",
     "installUrl": "https://raw.githubusercontent.com/UMR-Chan/Amoled-Anime-theme-Ram-From-Re-zero-/refs/heads/main/Theme%20Amoled%20Ram%20versi%C3%B3n%20by%20UMR_Chan.json",
     "images": [
-      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/AMOLED_anime_theme_(Ram_versión)1.webp",
-      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/AMOLED_anime_theme_(Ram_versión)2.webp"
+      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/AMOLED_anime_theme_(Ram_versiÃ³n)1.webp",
+      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/AMOLED_anime_theme_(Ram_versiÃ³n)2.webp"
     ],
     "tags": [
       "Themes Plus",
@@ -3244,7 +3244,7 @@
     ]
   },
   {
-    "name": "Sõmnum",
+    "name": "SÃµmnum",
     "description": "Zzzzzzzzzz",
     "authors": [
       "Machi"
@@ -3252,8 +3252,8 @@
     "sourceUrl": "https://github.com/WagooMachine/Themes",
     "installUrl": "https://raw.githubusercontent.com/WagooMachine/Themes/refs/heads/main/Somnum.json",
     "images": [
-      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Sõmnum_2.webp",
-      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Sõmnum.webp"
+      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/SÃµmnum_2.webp",
+      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/SÃµmnum.webp"
     ],
     "tags": [
       "Themes Plus",
@@ -3320,18 +3320,18 @@
     ]
   },
   {
-    "name": "Coffee ♨ Theme",
+    "name": "Coffee â¨ Theme",
     "description": "A cozy warm coffee/brown theme on pure black background",
     "authors": [
-      "𝐑𝐢𝐬𝐤"
+      "ðð¢ð¬ð¤"
     ],
     "sourceUrl": "https://github.com/0nlyrisk/Coffee-Theme",
     "installUrl": "https://raw.githubusercontent.com/0nlyrisk/Coffee-Theme/refs/heads/main/Coffee%20%E2%99%A8%20Theme",
     "images": [
-      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Coffee_♨_Theme_1.webp",
-      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Coffee_♨_Theme_2.webp",
-      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Coffee_♨_Theme_3.webp",
-      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Coffee_♨_Theme_4.webp"
+      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Coffee_â¨_Theme_1.webp",
+      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Coffee_â¨_Theme_2.webp",
+      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Coffee_â¨_Theme_3.webp",
+      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Coffee_â¨_Theme_4.webp"
     ],
     "tags": [
       "background",
@@ -3341,16 +3341,16 @@
     ]
   },
   {
-    "name": "Red Cherries 🍒 theme",
+    "name": "Red Cherries ð theme",
     "description": "A Comfy Cherry theme with deep, richly saturated cherry-red accents on pure black background",
     "authors": [
-      "⁷𐌌❟❛❟𝐑𝐢𝐬𝐤"
+      "â·ðâââðð¢ð¬ð¤"
     ],
     "sourceUrl": "https://github.com/0nlyrisk/Red-cherries-theme",
     "installUrl": "https://raw.githubusercontent.com/0nlyrisk/Red-cherries-theme/refs/heads/main/Red%20cherries%20%F0%9F%8D%92%20theme",
     "images": [
-      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Red_Cherries_🍒_them_2.webp",
-      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Red_Cherries_🍒_them_1.webp"
+      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Red_Cherries_ð_them_2.webp",
+      "https://raw.githubusercontent.com/Purple-EyeZ/Plugins-List/refs/heads/dev/src/assets/Themes_preview/Red_Cherries_ð_them_1.webp"
     ],
     "tags": [
       "Themes Plus",
