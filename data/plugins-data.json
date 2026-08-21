@@ -70,14 +70,16 @@
     "name": "ViewRaw",
     "description": "View raw message data",
     "authors": [
+      "Rosie",
       "sapphire",
       "Vendicated",
       "Bwlok"
     ],
     "status": "working",
-    "sourceUrl": "https://github.com/bwlok/revenge-plugins/tree/master/plugins/ViewRaw",
-    "installUrl": "https://bwlok.github.io/revenge-plugins/ViewRaw",
-    "warningMessage": ""
+    "sourceUrl": "https://github.com/everestmcarthir/revenge-plugins/tree/main/plugins/ViewRaw",
+    "installUrl": "https://rp.jarviscli.dev/view-raw/install",
+    "warningMessage": "",
+    "hidden": false
   },
   {
     "name": "UtilCommands",
@@ -121,14 +123,14 @@
     "status": "broken",
     "sourceUrl": "https://using-vendata-plugin-discord-crash-issue.pages.dev/",
     "installUrl": "https://using-vendata-plugin-discord-crash-issue.pages.dev/",
-    "warningMessage": "It doesn't crash my Discord 😭"
+    "warningMessage": "It doesn't crash my Discord ð­"
   },
   {
     "name": "Staff Tags",
     "description": "Shows extra tags for staff members.",
     "authors": [
       "Fiery",
-      "シグマ siguma"
+      "ã·ã°ã siguma"
     ],
     "status": "broken",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin",
@@ -239,7 +241,7 @@
     "description": "Allows Sending any audio as a voice message",
     "authors": [
       "Dziurwa",
-      "シグマ siguma"
+      "ã·ã°ã siguma"
     ],
     "status": "warning",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/customVoiceMessages/",
@@ -426,7 +428,7 @@
   },
   {
     "name": "Twemoji Everywhere",
-    "description": "Turns all system emoji used on Discord into Twemoji! 👋😀🎉",
+    "description": "Turns all system emoji used on Discord into Twemoji! ððð",
     "authors": [
       "nexpid"
     ],
@@ -500,7 +502,7 @@
     "status": "warning",
     "sourceUrl": "https://github.com/dziurwa14/vendetta-plugins",
     "installUrl": "https://dziurwa14.github.io/vendetta-plugins/Freecons/",
-    "warningMessage": "If it doesn’t work after restarting the app, force stop & clear cache (might not work on first try)"
+    "warningMessage": "If it doesnât work after restarting the app, force stop & clear cache (might not work on first try)"
   },
   {
     "name": "Clean URLs",
@@ -562,7 +564,7 @@
     "description": "Randomises file names before you upload them.",
     "authors": [
       "maisy",
-      "シグマ siguma"
+      "ã·ã°ã siguma"
     ],
     "status": "warning",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/AnonymousFileNames/",
@@ -652,7 +654,7 @@
     "description": "Allows profile theming and the usage of profile effects by hiding the colors and effect ID in your About Me using invisible, zero-width characters",
     "authors": [
       "ryan",
-      "シグマ siguma"
+      "ã·ã°ã siguma"
     ],
     "status": "warning",
     "sourceUrl": "https://github.com/shipwr3ckd/FPTE",
@@ -720,7 +722,7 @@
     "description": "Remove confirmation when deleting a message or an embed.",
     "authors": [
       "The Sun",
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/purple-eyez/RevengePlugins",
@@ -759,7 +761,7 @@
     "status": "warning",
     "sourceUrl": "https://github.com/angelix1/MP",
     "installUrl": "https://angelix1.github.io/MP/angel/antied/",
-    "warningMessage": "⚠️ May cause random crashes\n\n⚠️ Styling is broken on 298+\n\n⚠️ Editing your own messages may include previous edit logs. Add yourself to the ignore list to prevent this."
+    "warningMessage": "â ï¸ May cause random crashes\n\nâ ï¸ Styling is broken on 298+\n\nâ ï¸ Editing your own messages may include previous edit logs. Add yourself to the ignore list to prevent this."
   },
   {
     "name": "Dashless",
@@ -865,7 +867,7 @@
     "status": "warning",
     "sourceUrl": "https://github.com/PalmDevs/revenge-plugins/tree/main/plugins",
     "installUrl": "https://raw.githubusercontent.com/PalmDevs/revenge-plugins-builds/main/better-calls/",
-    "warningMessage": "⚠️ Causes a crash when opening bot DMs"
+    "warningMessage": "â ï¸ Causes a crash when opening bot DMs"
   },
   {
     "name": "Themes+",
@@ -1092,8 +1094,8 @@
     "warningMessage": ""
   },
   {
-    "name": "🗿",
-    "description": "🗿",
+    "name": "ð¿",
+    "description": "ð¿",
     "authors": [
       "Cynosphere",
       "kmmiio99o"
@@ -1259,7 +1261,7 @@
   },
   {
     "name": "LoginSound",
-    "description": "ディスコード!",
+    "description": "ãã£ã¹ã³ã¼ã!",
     "authors": [
       "Rico040"
     ],
@@ -1298,7 +1300,7 @@
     "description": "A plugin that removes the `X blocked or ignored message/s` prompt and replies to the blocked or ignored messages from chat.",
     "authors": [
       "Zykrah",
-      "シグマ siguma"
+      "ã·ã°ã siguma"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/HideBlockedAndIgnoredMessages/",
@@ -1309,7 +1311,7 @@
     "name": "CopyBios",
     "description": "Copy bio text",
     "authors": [
-      "シグマ siguma"
+      "ã·ã°ã siguma"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/CopyBios/",
@@ -1321,7 +1323,7 @@
     "description": "Browse plugins & themes from https://plugins-list.pages.dev/ - Fork of Nexpid's Plugin Browser",
     "authors": [
       "nexpid",
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/purple-eyez/Plugins-List_Plugin",
@@ -1344,12 +1346,12 @@
     "name": "catbox.moe",
     "description": "Upload your silly ahh files larger than 10MBs to catbox.moe.",
     "authors": [
-      "シグマ siguma"
+      "ã·ã°ã siguma"
     ],
     "status": "warning",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/catbox.moe/",
     "installUrl": "https://shipwr3ckd.github.io/revengeplugin/catbox.moe/",
-    "warningMessage": "Direct sending doesn’t work, you’ll need to enable either 'Copy link to clipboard' or 'Insert into the message'."
+    "warningMessage": "Direct sending doesnât work, youâll need to enable either 'Copy link to clipboard' or 'Insert into the message'."
   },
   {
     "name": "FileContentPreview",
@@ -1367,7 +1369,7 @@
     "description": "Sets Discord Rich Presence for your profile.",
     "authors": [
       "pylix",
-      "シグマ siguma"
+      "ã·ã°ã siguma"
     ],
     "status": "warning",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/RichPresence/",
@@ -1378,7 +1380,7 @@
     "name": "Silent Messages",
     "description": "Send messages without notifying the receiver.",
     "authors": [
-      "シグマ siguma"
+      "ã·ã°ã siguma"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/silentmessages/",
@@ -1390,7 +1392,7 @@
     "description": "Blur image previews and disable embed media in NSFW channels.",
     "authors": [
       "sylv256",
-      "シグマ siguma"
+      "ã·ã°ã siguma"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/nsfw-blur/",
@@ -1419,7 +1421,7 @@
     "status": "warning",
     "sourceUrl": "https://github.com/apexteampl/Apex-Plugins",
     "installUrl": "https://apexteampl.github.io/Apex-Plugins/nsfwbypass",
-    "warningMessage": "The UK bypass (age verification) doesn’t work anymore (NSFW channel content doesn’t load)\n\nUse a vpn to a country with some freedom"
+    "warningMessage": "The UK bypass (age verification) doesnât work anymore (NSFW channel content doesnât load)\n\nUse a vpn to a country with some freedom"
   },
   {
     "name": "More Alts!",
@@ -1475,7 +1477,7 @@
     "status": "warning",
     "sourceUrl": "https://github.com/angelix1/MP",
     "installUrl": "https://angelix1.github.io/MP/angel/antiedzero/",
-    "warningMessage": "⚠️ Editing your own messages may include previous edit logs.\n\n⚠️ May still cause random crashes."
+    "warningMessage": "â ï¸ Editing your own messages may include previous edit logs.\n\nâ ï¸ May still cause random crashes."
   },
   {
     "name": "Radial Status v1.0.1",
@@ -1522,7 +1524,7 @@
     "warningMessage": ""
   },
   {
-    "name": "🎄 Christmas Counter",
+    "name": "ð Christmas Counter",
     "description": "Displays a countdown to Christmas every day.",
     "authors": [
       "Vaiskiainen"
@@ -1633,10 +1635,10 @@
     "warningMessage": ""
   },
   {
-    "name": "🇺🇸 GTA VI Countdown",
+    "name": "ðºð¸ GTA VI Countdown",
     "description": "Counting down until you reach heaven.",
     "authors": [
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/purple-eyez/RevengePlugins",
@@ -1659,7 +1661,7 @@
     "description": "Generic text replacement plugin",
     "authors": [
       "Fiery",
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/purple-eyez/RevengePlugins",
@@ -1671,7 +1673,7 @@
     "description": "Makes freemojis real (Client-side only)",
     "authors": [
       "redstonekasi",
-      "Purple_Ξye™"
+      "Purple_Îyeâ¢"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/purple-eyez/RevengePlugins",
