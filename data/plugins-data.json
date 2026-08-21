@@ -1,6 +1,6 @@
 [
   {
-    "name": "Server Info",
+    "name": "ServerInfo",
     "description": "A plugin that provides detailed insights for Discord servers.\n\nported from revenge-next based on @kmmiio99o (@kmmiio99o.dev)'s plugin https://rn.kmmiio99o.dev/",
     "authors": [
       "fshin"
