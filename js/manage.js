@@ -1,5 +1,6 @@
 (() => {
     const REPO = 'Retribution-Mod/retribution-website';
+    const ALLOWED_USERS = ['everestmcarthur'];
     const CONFIG = {
         plugins: { file: 'data/plugins-data.json', fields: [
             { key: 'name', label: 'Name', type: 'text' },
@@ -84,9 +85,25 @@
         return btoa(binary);
     }
 
+    async function getCurrentUser() {
+        const res = await fetch('https://api.github.com/user', { headers: headers() });
+        if (!res.ok) throw new Error(`GitHub auth failed: ${res.status} ${res.statusText}`);
+        return res.json();
+    }
+
+    async function requireAuth() {
+        const user = await getCurrentUser();
+        if (!ALLOWED_USERS.includes(user.login)) {
+            throw new Error(`User "${user.login}" is not authorized to manage this catalog.`);
+        }
+        return user.login;
+    }
+
     async function loadCatalog() {
         clearLog();
         try {
+            const login = await requireAuth();
+            log(`Authenticated as ${login}`);
             for (const [type, { file }] of Object.entries(CONFIG)) {
                 const meta = await ghGet(file);
                 shas[type] = meta.sha;
@@ -218,6 +235,8 @@
     async function commitAll() {
         clearLog();
         try {
+            const login = await requireAuth();
+            log(`Authenticated as ${login}`);
             for (const [type, { file }] of Object.entries(CONFIG)) {
                 const content = JSON.stringify(catalog[type], null, 2) + '\n';
                 if (!shas[type]) throw new Error(`No SHA for ${type}. Load catalog first.`);
