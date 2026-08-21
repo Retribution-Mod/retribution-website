@@ -1,5 +1,321 @@
 [
   {
+    "name": "YouBar+",
+    "description": "Adds Settings and DM buttons to the YouBar. (Requires a restart)",
+    "authors": [
+      "Purple_Eyez"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/Purple-EyeZ/RevengePlugins/tree/main/plugins/YouBarPlus",
+    "installUrl": "https://purple-eyez.github.io/RevengePlugins/YouBarPlus/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "SearchActionSheet",
+    "description": "Makes search results open the message action sheet on long press. Same as Equicord's FullSearchContext",
+    "authors": [
+      "tralwdwd"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/tralwdwd/plugins/tree/master/plugins/SearchActionSheet",
+    "installUrl": "https://tralwdwd.github.io/plugins/SearchActionSheet",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "FastCopyUserID",
+    "description": "Copy a message author's user ID directly from the long press context menu.",
+    "authors": [
+      "fshin"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/fshinz/Revenge-Plugins/tree/main/plugins/FastCopyUserID/",
+    "installUrl": "https://fshinz.github.io/Revenge-Plugins/FastCopyUserID",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "RemoveNitroProfileEffects",
+    "description": "Note: Sever Pre profile Previews will still show it looking for a fix yet. \n\nRemove Nitro Profile Effects completely.",
+    "authors": [
+      "OTKUSteyler"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/OTKUSteyler/RemoveNitroProfileEffects/tree/master",
+    "installUrl": "https://otkusteyler.github.io/RemoveNitroProfileEffects/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "Staff Tags",
+    "description": "Hello! I have revived Staff Tags plugin by Fiery!! Same as before, with some added configurations for coloring and customizing display for each tag!",
+    "authors": [
+      "Rosie",
+      "Fiery"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/staff-tags",
+    "installUrl": "https://rp.jarviscli.dev/staff-tags/install/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "ViewRaw",
+    "description": "I made a fork of Bwlok's View Raw plugin, with added features such as search, syntax highlighting, and more.",
+    "authors": [
+      "Rosie",
+      "Bwlok"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/view-raw",
+    "installUrl": "https://rp.jarviscli.dev/view-raw/install/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "Reminders",
+    "description": "Are you tired of forgetting things? Well, now you can remember, with /remind",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/reminders",
+    "installUrl": "https://rp.jarviscli.dev/reminders/install/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "Custom User Tags",
+    "description": "You ever use Staff Tags and just felt like \"I dont like how it uses permissions\" or \"Why can't this be globally, for my friends?\"\n\nHere's the plugin you need!!",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/custom-user-tags",
+    "installUrl": "https://rp.jarviscli.dev/reminders/install/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "Radial Statuses",
+    "description": "Do you want more than just a dot for statuses, better visibility for them? Here ya go!",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/radial-status",
+    "installUrl": "https://rp.jarviscli.dev/radial-status/install/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "Reverse Image Search",
+    "description": "Needing help doing a reverse image search? Use this command to open it up! Supports Google Lens, Yandex and TinEye",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/reverse-image-search",
+    "installUrl": "https://rp.jarviscli.dev/reverse-image-search/install/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "BetterTimestamps",
+    "description": "Kinda a dumb one, but can be useful for others. Want to customize timestamps or remove them? Here ya go",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/better-timestamps",
+    "installUrl": "https://rp.jarviscli.dev/better-timestamps/install/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "BetterInbox",
+    "description": "A Better Notification inbox experience that organizes your Discord mentions, replies, and reactions with advanced filtering by people, roles, and bots.",
+    "authors": [
+      "fshin"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/fshinz/Revenge-Plugins/tree/main/plugins/BetterInbox/",
+    "installUrl": "https://fshinz.github.io/Revenge-Plugins/BetterInbox",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "NoTypingAnimation",
+    "description": "Removes the useless typing animation",
+    "authors": [
+      "OTKUSteyler"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/OTKUSteyler/NoTypingAnimation",
+    "installUrl": "https://otkusteyler.github.io/NoTypingAnimation/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "Copy Role Colors",
+    "description": "You ever want to create a role with a color you've had in the past? Add this and copy the hex!!",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/copy-role-color",
+    "installUrl": "https://rp.jarviscli.dev/copy-role-color/install/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "RoleColorsEverywhere",
+    "description": "You tired of the bland white role grouping in member list, typing, etc? With this, it gets replaced by the color of your top group role. Group role is the role that is hoisted. Top group role is the highest role you have that's hoisted",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/role-color-everywhere",
+    "installUrl": "https://rp.jarviscli.dev/role-color-everywhere/install/",
+    "warningMessage": "⚠️⚠️Does NOT work on iOS due to limitations⚠️⚠️",
+    "hidden": false
+  },
+  {
+    "name": "Message Snippets",
+    "description": "You ever want to save messages to send later? Here ya go!",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/message-snippets",
+    "installUrl": "https://rp.jarviscli.dev/message-snippets/install/",
+    "warningMessage": "May not work 100%",
+    "hidden": false
+  },
+  {
+    "name": "Urban Dictionary",
+    "description": "Wanna look up something quick on urban dictionary? Here you go! Just run /urban",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/urban-dictionary",
+    "installUrl": "https://rp.jarviscli.dev/urban-dictionary/install/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "Custom Countdown!",
+    "description": "It's a heavily modified and enhanced version of the original GTA VI Countdown by Purple_EyeZ, but now it is 100% customizable so you can use it for absolutely any event you want!\n\nFeatures & Customization:\n\n    Any Date or Custom Text: Set a target date (YYYY-MM-DD) to count down the days, or simply type a custom word (e.g., \"Soon\"). \n    Custom Image or GIF: Paste a link to your favorite .png, .jpg, or .gif to display on the left. Don't want an image? Just toggle it off for a sleek text-only look!\n\n    Fully Editable Text: You can change the Main Title, the \"Days Left\" indicator, and the bottom description.\n\n    Custom Gradient Border: Make it yours by choosing the exact HEX colors for the left and right sides of the outline gradient.\n\n    Bilingual Defaults: Choose between English and French for the default placeholder texts.\n\n    Full Control: Customize the toast duration (1 to 20 seconds) and the frequency (Startup, Hourly, Daily, Weekly).\n\n    Live Preview: Test your setup instantly directly from the settings menu.",
+    "authors": [
+      "TaediumBreak",
+      "PurpleEyez"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/taedium-officiel/CustomCountdown",
+    "installUrl": "https://taedium-officiel.github.io/CustomCountdown/dist/GTAVICountdown/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "FakeProfileTheme&Effects",
+    "description": "This plugin allows you to add fake themes to your profile! Effects coming soon.",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/fake-profile-themes-and-effects",
+    "installUrl": "https://rp.jarviscli.dev/fake-profile-themes-and-effects/install/",
+    "warningMessage": "Effects are not working. If you open effect menu, RESTART your Discord!",
+    "hidden": false
+  },
+  {
+    "name": "RoseUtils",
+    "description": "This will be a compilation of utils requested. Presently the primarily fully implemented utility is enforcing developer mode to stay on.",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/rose-utils",
+    "installUrl": "https://rp.jarviscli.dev/rose-utils/install/",
+    "warningMessage": "Not 100% Implemented yet",
+    "hidden": false
+  },
+  {
+    "name": "Rosie's Plugs",
+    "description": "Compilation of all of my plugins, in one, quick install place.\n\nThis plugin creates a new area in settings that has all my plugins (Released on here and ones still a WIP (ones on here are the ones that are released)\n\nAll settings for my plugins will also be found in this new area too (If you do not have this plugin, they will still be in the plugins settings)",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/split-messages",
+    "installUrl": "https://rp.jarviscli.dev/split-messages/install/",
+    "warningMessage": "May cause issues/lag at first",
+    "hidden": false
+  },
+  {
+    "name": "Split Messages",
+    "description": "Looking to go around having long messages? Tired of struggling to send messages due to character limits? Come install this! It allows you to post essentially 1 billion characters, split into 2000/4000 characters (Depends on if you have nitro or not determines length)",
+    "authors": [
+      "Rosie"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/everestmcarthur/revenge-plugins/tree/main/plugins/split-messages",
+    "installUrl": "https://rp.jarviscli.dev/split-messages/install/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "ArabCord",
+    "description": "A plugin that translates Discord to Arabic with RTL system (Beta)",
+    "authors": [
+      "SNT"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/s-n-t09/arabcord",
+    "installUrl": "https://s-n-t09.github.io/arabcord/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "MuslimCord is a plugin that",
+    "description": "Remind Muslims to do their prayers with a du'a system and reminder to pray for Muhammad (PBUH)",
+    "authors": [
+      "SNT"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/s-n-t09/muslimcord",
+    "installUrl": "https://s-n-t09.github.io/muslimcord/",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "Metro Inspector",
+    "description": "A plugin for DEVELOPERS search and find modules,keys to make stuff easier",
+    "authors": [
+      "fshin"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/fshinz/Revenge-Plugins/tree/main/MetroInspector",
+    "installUrl": "https://fshinz.github.io/Revenge-Plugins/MetroInspector",
+    "warningMessage": "",
+    "hidden": false
+  },
+  {
+    "name": "PlatformSpoofer",
+    "description": "Spoof your Discord online presence status to appear as Desktop, Web, Meta Quest, or Console with real-time socket patch persistence.\n\nOriginal credit's to K1NG for their Revenge-Next plugin",
+    "authors": [
+      "fshin",
+      "K1NG"
+    ],
+    "status": "working",
+    "sourceUrl": "https://github.com/fshinz/Revenge-Plugins/tree/main/plugins/PlatformSpoof/",
+    "installUrl": "https://fshinz.github.io/Revenge-Plugins/PlatformSpoof",
+    "warningMessage": "USE IT AT UR OWN RISK",
+    "hidden": false
+  },
+  {
     "name": "ServerInfo",
     "description": "A plugin that provides detailed insights for Discord servers.\n\nported from revenge-next based on @kmmiio99o (@kmmiio99o.dev)'s plugin https://rn.kmmiio99o.dev/",
     "authors": [
@@ -123,14 +439,14 @@
     "status": "broken",
     "sourceUrl": "https://using-vendata-plugin-discord-crash-issue.pages.dev/",
     "installUrl": "https://using-vendata-plugin-discord-crash-issue.pages.dev/",
-    "warningMessage": "It doesn't crash my Discord ð­"
+    "warningMessage": "It doesn't crash my Discord Ã°ÂÂÂ­"
   },
   {
     "name": "Staff Tags",
     "description": "Shows extra tags for staff members.",
     "authors": [
       "Fiery",
-      "ã·ã°ã siguma"
+      "Ã£ÂÂ·Ã£ÂÂ°Ã£ÂÂ siguma"
     ],
     "status": "broken",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin",
@@ -241,7 +557,7 @@
     "description": "Allows Sending any audio as a voice message",
     "authors": [
       "Dziurwa",
-      "ã·ã°ã siguma"
+      "Ã£ÂÂ·Ã£ÂÂ°Ã£ÂÂ siguma"
     ],
     "status": "warning",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/customVoiceMessages/",
@@ -428,7 +744,7 @@
   },
   {
     "name": "Twemoji Everywhere",
-    "description": "Turns all system emoji used on Discord into Twemoji! ððð",
+    "description": "Turns all system emoji used on Discord into Twemoji! Ã°ÂÂÂÃ°ÂÂÂÃ°ÂÂÂ",
     "authors": [
       "nexpid"
     ],
@@ -502,7 +818,7 @@
     "status": "warning",
     "sourceUrl": "https://github.com/dziurwa14/vendetta-plugins",
     "installUrl": "https://dziurwa14.github.io/vendetta-plugins/Freecons/",
-    "warningMessage": "If it doesnât work after restarting the app, force stop & clear cache (might not work on first try)"
+    "warningMessage": "If it doesnÃ¢ÂÂt work after restarting the app, force stop & clear cache (might not work on first try)"
   },
   {
     "name": "Clean URLs",
@@ -564,7 +880,7 @@
     "description": "Randomises file names before you upload them.",
     "authors": [
       "maisy",
-      "ã·ã°ã siguma"
+      "Ã£ÂÂ·Ã£ÂÂ°Ã£ÂÂ siguma"
     ],
     "status": "warning",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/AnonymousFileNames/",
@@ -654,7 +970,7 @@
     "description": "Allows profile theming and the usage of profile effects by hiding the colors and effect ID in your About Me using invisible, zero-width characters",
     "authors": [
       "ryan",
-      "ã·ã°ã siguma"
+      "Ã£ÂÂ·Ã£ÂÂ°Ã£ÂÂ siguma"
     ],
     "status": "warning",
     "sourceUrl": "https://github.com/shipwr3ckd/FPTE",
@@ -722,7 +1038,7 @@
     "description": "Remove confirmation when deleting a message or an embed.",
     "authors": [
       "The Sun",
-      "Purple_Îyeâ¢"
+      "Purple_ÃÂyeÃ¢ÂÂ¢"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/purple-eyez/RevengePlugins",
@@ -761,7 +1077,7 @@
     "status": "warning",
     "sourceUrl": "https://github.com/angelix1/MP",
     "installUrl": "https://angelix1.github.io/MP/angel/antied/",
-    "warningMessage": "â ï¸ May cause random crashes\n\nâ ï¸ Styling is broken on 298+\n\nâ ï¸ Editing your own messages may include previous edit logs. Add yourself to the ignore list to prevent this."
+    "warningMessage": "Ã¢ÂÂ Ã¯Â¸Â May cause random crashes\n\nÃ¢ÂÂ Ã¯Â¸Â Styling is broken on 298+\n\nÃ¢ÂÂ Ã¯Â¸Â Editing your own messages may include previous edit logs. Add yourself to the ignore list to prevent this."
   },
   {
     "name": "Dashless",
@@ -867,7 +1183,7 @@
     "status": "warning",
     "sourceUrl": "https://github.com/PalmDevs/revenge-plugins/tree/main/plugins",
     "installUrl": "https://raw.githubusercontent.com/PalmDevs/revenge-plugins-builds/main/better-calls/",
-    "warningMessage": "â ï¸ Causes a crash when opening bot DMs"
+    "warningMessage": "Ã¢ÂÂ Ã¯Â¸Â Causes a crash when opening bot DMs"
   },
   {
     "name": "Themes+",
@@ -1094,8 +1410,8 @@
     "warningMessage": ""
   },
   {
-    "name": "ð¿",
-    "description": "ð¿",
+    "name": "Ã°ÂÂÂ¿",
+    "description": "Ã°ÂÂÂ¿",
     "authors": [
       "Cynosphere",
       "kmmiio99o"
@@ -1261,7 +1577,7 @@
   },
   {
     "name": "LoginSound",
-    "description": "ãã£ã¹ã³ã¼ã!",
+    "description": "Ã£ÂÂÃ£ÂÂ£Ã£ÂÂ¹Ã£ÂÂ³Ã£ÂÂ¼Ã£ÂÂ!",
     "authors": [
       "Rico040"
     ],
@@ -1300,7 +1616,7 @@
     "description": "A plugin that removes the `X blocked or ignored message/s` prompt and replies to the blocked or ignored messages from chat.",
     "authors": [
       "Zykrah",
-      "ã·ã°ã siguma"
+      "Ã£ÂÂ·Ã£ÂÂ°Ã£ÂÂ siguma"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/HideBlockedAndIgnoredMessages/",
@@ -1311,7 +1627,7 @@
     "name": "CopyBios",
     "description": "Copy bio text",
     "authors": [
-      "ã·ã°ã siguma"
+      "Ã£ÂÂ·Ã£ÂÂ°Ã£ÂÂ siguma"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/CopyBios/",
@@ -1323,7 +1639,7 @@
     "description": "Browse plugins & themes from https://plugins-list.pages.dev/ - Fork of Nexpid's Plugin Browser",
     "authors": [
       "nexpid",
-      "Purple_Îyeâ¢"
+      "Purple_ÃÂyeÃ¢ÂÂ¢"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/purple-eyez/Plugins-List_Plugin",
@@ -1346,12 +1662,12 @@
     "name": "catbox.moe",
     "description": "Upload your silly ahh files larger than 10MBs to catbox.moe.",
     "authors": [
-      "ã·ã°ã siguma"
+      "Ã£ÂÂ·Ã£ÂÂ°Ã£ÂÂ siguma"
     ],
     "status": "warning",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/catbox.moe/",
     "installUrl": "https://shipwr3ckd.github.io/revengeplugin/catbox.moe/",
-    "warningMessage": "Direct sending doesnât work, youâll need to enable either 'Copy link to clipboard' or 'Insert into the message'."
+    "warningMessage": "Direct sending doesnÃ¢ÂÂt work, youÃ¢ÂÂll need to enable either 'Copy link to clipboard' or 'Insert into the message'."
   },
   {
     "name": "FileContentPreview",
@@ -1369,7 +1685,7 @@
     "description": "Sets Discord Rich Presence for your profile.",
     "authors": [
       "pylix",
-      "ã·ã°ã siguma"
+      "Ã£ÂÂ·Ã£ÂÂ°Ã£ÂÂ siguma"
     ],
     "status": "warning",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/RichPresence/",
@@ -1380,7 +1696,7 @@
     "name": "Silent Messages",
     "description": "Send messages without notifying the receiver.",
     "authors": [
-      "ã·ã°ã siguma"
+      "Ã£ÂÂ·Ã£ÂÂ°Ã£ÂÂ siguma"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/silentmessages/",
@@ -1392,7 +1708,7 @@
     "description": "Blur image previews and disable embed media in NSFW channels.",
     "authors": [
       "sylv256",
-      "ã·ã°ã siguma"
+      "Ã£ÂÂ·Ã£ÂÂ°Ã£ÂÂ siguma"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/shipwr3ckd/revengeplugin/tree/master/plugins/nsfw-blur/",
@@ -1421,7 +1737,7 @@
     "status": "warning",
     "sourceUrl": "https://github.com/apexteampl/Apex-Plugins",
     "installUrl": "https://apexteampl.github.io/Apex-Plugins/nsfwbypass",
-    "warningMessage": "The UK bypass (age verification) doesnât work anymore (NSFW channel content doesnât load)\n\nUse a vpn to a country with some freedom"
+    "warningMessage": "The UK bypass (age verification) doesnÃ¢ÂÂt work anymore (NSFW channel content doesnÃ¢ÂÂt load)\n\nUse a vpn to a country with some freedom"
   },
   {
     "name": "More Alts!",
@@ -1477,7 +1793,7 @@
     "status": "warning",
     "sourceUrl": "https://github.com/angelix1/MP",
     "installUrl": "https://angelix1.github.io/MP/angel/antiedzero/",
-    "warningMessage": "â ï¸ Editing your own messages may include previous edit logs.\n\nâ ï¸ May still cause random crashes."
+    "warningMessage": "Ã¢ÂÂ Ã¯Â¸Â Editing your own messages may include previous edit logs.\n\nÃ¢ÂÂ Ã¯Â¸Â May still cause random crashes."
   },
   {
     "name": "Radial Status v1.0.1",
@@ -1524,7 +1840,7 @@
     "warningMessage": ""
   },
   {
-    "name": "ð Christmas Counter",
+    "name": "Ã°ÂÂÂ Christmas Counter",
     "description": "Displays a countdown to Christmas every day.",
     "authors": [
       "Vaiskiainen"
@@ -1635,10 +1951,10 @@
     "warningMessage": ""
   },
   {
-    "name": "ðºð¸ GTA VI Countdown",
+    "name": "Ã°ÂÂÂºÃ°ÂÂÂ¸ GTA VI Countdown",
     "description": "Counting down until you reach heaven.",
     "authors": [
-      "Purple_Îyeâ¢"
+      "Purple_ÃÂyeÃ¢ÂÂ¢"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/purple-eyez/RevengePlugins",
@@ -1661,7 +1977,7 @@
     "description": "Generic text replacement plugin",
     "authors": [
       "Fiery",
-      "Purple_Îyeâ¢"
+      "Purple_ÃÂyeÃ¢ÂÂ¢"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/purple-eyez/RevengePlugins",
@@ -1673,7 +1989,7 @@
     "description": "Makes freemojis real (Client-side only)",
     "authors": [
       "redstonekasi",
-      "Purple_Îyeâ¢"
+      "Purple_ÃÂyeÃ¢ÂÂ¢"
     ],
     "status": "working",
     "sourceUrl": "https://github.com/purple-eyez/RevengePlugins",
