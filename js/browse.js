@@ -123,7 +123,7 @@
         const pageItems = perPage === Infinity ? filteredItems : filteredItems.slice(start, start + perPage);
 
         if (pageItems.length === 0) {
-            resultsEl.innerHTML = `<p class="text-muted text-center" style="grid-column: 1/-1;">No ${type}s found.</p>`;
+            resultsEl.innerHTML = `<p class="text-muted text-center" style="grid-column: 1/-1;">No ${escapeHtml(type)}s found.</p>`;
         } else {
             resultsEl.innerHTML = pageItems.map(renderCard).join('');
         }
@@ -186,7 +186,7 @@
             render();
         })
         .catch(err => {
-            resultsEl.innerHTML = `<p class="text-muted text-center" style="grid-column: 1/-1;">Failed to load ${type} catalog: ${escapeHtml(err.message)}</p>`;
+            resultsEl.innerHTML = `<p class="text-muted text-center" style="grid-column: 1/-1;">Failed to load ${escapeHtml(type)} catalog: ${escapeHtml(err.message)}</p>`;
         });
 
     if (searchEl) {
