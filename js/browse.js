@@ -36,6 +36,14 @@
         return String(str ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
     }
 
+    function showMessage(text) {
+        const p = document.createElement('p');
+        p.className = 'text-muted text-center';
+        p.style.gridColumn = '1 / -1';
+        p.textContent = text;
+        resultsEl.replaceChildren(p);
+    }
+
     function itemUrl(item) {
         if (type === 'font') return specUrl(item.family);
         return item.installUrl;
@@ -123,7 +131,7 @@
         const pageItems = perPage === Infinity ? filteredItems : filteredItems.slice(start, start + perPage);
 
         if (pageItems.length === 0) {
-            resultsEl.innerHTML = `<p class="text-muted text-center" style="grid-column: 1/-1;">No ${escapeHtml(type)}s found.</p>`;
+            showMessage(`No ${type}s found.`);
         } else {
             resultsEl.innerHTML = pageItems.map(renderCard).join('');
         }
@@ -186,7 +194,7 @@
             render();
         })
         .catch(err => {
-            resultsEl.innerHTML = `<p class="text-muted text-center" style="grid-column: 1/-1;">Failed to load ${escapeHtml(type)} catalog: ${escapeHtml(err.message)}</p>`;
+            showMessage(`Failed to load ${type} catalog: ${err.message}`);
         });
 
     if (searchEl) {
