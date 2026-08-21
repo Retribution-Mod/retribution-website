@@ -59,8 +59,12 @@
     function badgeClass(status) {
         if (!status) return '';
         if (status === 'working') return 'success';
-        if (status === 'broken') return 'danger';
+        if (status === 'broken' || status === 'incompatible') return 'danger';
         return 'warning';
+    }
+
+    function isInstallable(item) {
+        return item.status !== 'incompatible' && item.status !== 'broken' && !item.hidden;
     }
 
     function renderPluginThemeCard(item) {
@@ -69,12 +73,16 @@
         const firstImage = type === 'theme' && item.images?.length ? `<img src="${escapeHtml(item.images[0])}" alt="" class="card-preview" loading="lazy" onerror="this.style.display='none'">` : '';
         const tags = (item.tags || []).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('');
         const status = item.status ? `<span class="tag ${badgeClass(item.status)}">${escapeHtml(item.status)}</span>` : '';
+        const hidden = item.hidden ? `<span class="tag warning">hidden</span>` : '';
         const warning = item.warningMessage ? `<p class="card-warning">${escapeHtml(item.warningMessage)}</p>` : '';
+        const installBtn = isInstallable(item)
+            ? `<a class="btn btn-sm btn-primary" href="${escapeHtml(link)}">Open in Retribution</a>`
+            : `<span class="btn btn-sm" style="opacity:.5;cursor:not-allowed;">${escapeHtml(item.status === 'incompatible' ? 'Incompatible' : 'Unavailable')}</span>`;
 
         return `
             <article class="download-card browse-card" data-name="${escapeHtml(itemTitle(item).toLowerCase())}">
                 ${firstImage}
-                <div class="card-tags">${status}${tags}</div>
+                <div class="card-tags">${status}${hidden}${tags}</div>
                 <h3>${escapeHtml(itemTitle(item))}</h3>
                 <p class="card-subtitle">${escapeHtml(itemSubtitle(item))}</p>
                 <p class="card-description">${escapeHtml(itemDescription(item))}</p>
@@ -84,7 +92,7 @@
                 </div>
                 <div class="card-actions">
                     <button class="btn btn-sm btn-secondary copy-link" data-link="${escapeHtml(link)}">Copy deep link</button>
-                    <a class="btn btn-sm btn-primary" href="${escapeHtml(link)}">Open in Retribution</a>
+                    ${installBtn}
                 </div>
             </article>
         `;
@@ -173,7 +181,7 @@
     fetch(source)
         .then(r => r.json())
         .then(data => {
-            allItems = data || [];
+            allItems = (data || []).filter(item => !item.hidden);
             filteredItems = allItems.slice();
             render();
         })

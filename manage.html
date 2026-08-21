@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Catalog — Retribution</title>
+    <meta name="description" content="Manage the Retribution plugin, theme, and font catalog.">
+    <link rel="icon" type="image/png" href="https://retribution-assets.allyapp.workers.dev/icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .admin-grid { display: grid; gap: 1rem; margin-top: 1rem; }
+        .admin-card { background: var(--bg-1); border: 1px solid var(--bg-2); border-radius: var(--radius-sm); padding: 1rem; }
+        .admin-card.hidden-item { opacity: 0.55; }
+        .admin-card h3 { margin-bottom: 0.75rem; font-size: 1rem; }
+        .admin-fields { display: grid; gap: 0.6rem; }
+        .admin-fields label { font-size: 0.8rem; color: var(--text-2); }
+        .admin-fields input, .admin-fields textarea, .admin-fields select {
+            width: 100%;
+            background: var(--bg-0);
+            border: 1px solid var(--bg-2);
+            border-radius: 8px;
+            padding: 0.5rem 0.75rem;
+            color: var(--text-1);
+            font-family: var(--font);
+            font-size: 0.9rem;
+        }
+        .admin-fields textarea { min-height: 3.6rem; resize: vertical; }
+        .admin-fields input:focus, .admin-fields textarea:focus, .admin-fields select:focus { outline: none; border-color: var(--accent); }
+        .admin-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.6rem; }
+        .admin-actions { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
+        .admin-toolbar { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; margin-bottom: 1.25rem; }
+        .admin-toolbar input[type="password"] { min-width: 280px; }
+        .tab-list { display: flex; gap: 0.5rem; margin-bottom: 1rem; border-bottom: 1px solid var(--bg-2); padding-bottom: 0.75rem; }
+        .tab-list button { background: var(--bg-2); border: none; color: var(--text-2); padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer; font-weight: 500; }
+        .tab-list button.active { background: var(--accent); color: white; }
+        .badge { display: inline-block; font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; margin-left: 0.5rem; }
+        .badge-danger { background: rgba(248, 113, 113, 0.15); color: var(--danger); }
+        .badge-success { background: rgba(52, 211, 153, 0.15); color: var(--success); }
+        .badge-warning { background: rgba(251, 191, 36, 0.15); color: var(--warning); }
+        .log { background: var(--bg-1); border: 1px solid var(--bg-2); border-radius: var(--radius-sm); padding: 1rem; margin-top: 1.25rem; font-family: var(--mono); font-size: 0.8rem; color: var(--text-2); white-space: pre-wrap; max-height: 300px; overflow-y: auto; }
+        .btn-danger { background: rgba(248, 113, 113, 0.15); color: var(--danger); border-color: rgba(248, 113, 113, 0.3); }
+        .btn-danger:hover { background: rgba(248, 113, 113, 0.25); }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html">
+                <img src="https://retribution-assets.allyapp.workers.dev/icon" alt="Retribution logo">
+                <span>Retribution</span>
+            </a>
+            <nav class="main-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="downloads.html">Downloads</a>
+                <a href="docs/index.html">Docs</a>
+                <a href="plugins.html">Browse</a>
+                <a href="deep-link.html">Deep Link</a>
+                <a href="manage.html" class="active">Manage</a>
+                <a href="https://github.com/Retribution-Mod" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Catalog Manager</h1>
+            <p>Add, edit, and mark items in the public plugin, theme, and font catalog.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="admin-toolbar">
+                <input type="password" id="token" placeholder="GitHub token (repo or public_repo)">
+                <select id="branch">
+                    <option value="main" selected>main</option>
+                </select>
+                <button class="btn btn-primary" id="load">Load catalog</button>
+            </div>
+
+            <div class="tab-list" id="tabs">
+                <button class="active" data-type="plugins">Plugins</button>
+                <button data-type="themes">Themes</button>
+                <button data-type="fonts">Fonts</button>
+            </div>
+
+            <div class="admin-toolbar">
+                <button class="btn btn-primary" id="add-item">Add item</button>
+                <button class="btn btn-secondary" id="download-json">Download JSON</button>
+                <button class="btn" id="save-all">Commit to GitHub</button>
+            </div>
+
+            <div id="editor" class="admin-grid"></div>
+
+            <pre id="log" class="log" hidden></pre>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                <a href="https://github.com/Retribution-Mod">GitHub</a>
+                <a href="docs/index.html">Docs</a>
+                <a href="downloads.html">Downloads</a>
+            </p>
+            <p class="text-muted">Not affiliated with Discord. Use at your own risk.</p>
+        </div>
+    </footer>
+
+    <script src="js/manage.js?v=1"></script>
+</body>
+</html>
